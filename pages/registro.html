@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria FK | Home</title>
+
+    <!--Links do Site-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/registro.css">
+
+</head>
+<body>  
+
+    <header >
+        <nav>
+            <ul>
+                <a href="../index.php"><li><img src="../assets/Pizza_F_K-logo.png" alt="logo" id="logo"></li></a>
+            </ul>
+
+            <ul id="options">
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="cardapio.php">Cardápio</a></li>
+                <li><a href="login.html">Login</a></li>
+
+            </ul>
+
+            <ul>
+                <a href="carrinho.php"><li><img src="../assets/bag.png" alt="" id="bag"></li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+            <div class="login">
+                <form action="../php/register.php" method="post">
+                    <div class="lines">
+                        <div class="line1"></div>
+                        <div class="tittle"><h1>Cadastro</h1></div>
+                        <div class="line2"></div>
+                    </div>
+
+                    <div class="container">
+                        <label for="email">E-mail:</label>
+                        <br />
+                        <input type="email" id="email" name="email"  placeholder="Email"/>
+                        <br />
+                        <label for="senha">Senha:</label>
+                        <br />
+                        <input type="password" id="senha" name="senha" placeholder="Senha"/>
+                        <label for="nome">Nome:</label>
+                        <br />
+                        <input type="text" id="nome" name="nome" required  placeholder="Nome" />
+                        <br />
+    
+                        <label for="cpf">CPF:</label>
+                        <br />
+                        <input type="number" id="cpf" name="cpf" required   placeholder="Cpf"/>
+                        <br>
+                        
+                        <label for="data_nasc">Data Nascimento:</label>
+                        <br />
+                        <input type="date" id="data_nasc" name="data_nasc" required color="#78838c" />
+                        <br />
+    
+                        <!--VIACEP-->
+                        <label for="cep">CEP:</label>
+                        <br />
+                        <input type="number" id="cep" name="cep" required  placeholder="Cep"/>
+                        <br>
+    
+                        <label for="endereco">Endereço:</label>
+                        <br />
+                        <input type="text" id="endereco" name="endereco"  required placeholder="Endereço" />
+                        <br>
+    
+                        
+                        <label for="bairro">Bairro:</label>
+                        <br />
+                        <input type="text" id="bairro" name="bairro" required  placeholder="Bairro"/>
+                        <br>
+    
+                                            
+                        <label for="cidade">Cidade:</label>
+                        <br />
+                        <input type="text" id="cidade" name="cidade" required placeholder="Cidade" />
+                        <br>
+    
+                        <label for="uf">UF:</label>
+                        <br />
+                        <select id="uf" name="uf" required >
+                            <option value="">Selecione</option>
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AP">AP</option>
+                            <option value="AM">AM</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MS">MS</option>
+                            <option value="MT">MT</option>
+                            <option value="MG">MG</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PR">PR</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SC">SC</option>
+                            <option value="SP">SP</option>
+                            <option value="SE">SE</option>
+                            <option value="TO">TO</option>
+                         </select>
+                        <br>
+                    </div>
+
+
+    
+                    <div class="enviar">
+                        <button type="submit" class="btn_enviar">Criar Conta</button>
+                    </div>
+    
+
+                </form>
+     
+ 
+            </div>
+        </div>
+
+        
+
+    </main>
+    <footer class="footer">
+        <!-- 3 divs pra separar os 3 elementos do footer, 
+            onde será possível adicionar um display 
+            flex, permitindo que os 3 elementos possam ficar 
+            um ao lado do outro -->
+        <div id="logo_footer">
+            <img src="../assets/Pizza_F_K-logo.png" alt="PizzaHyt">
+        </div>
+        <div id="contact">
+            <strong>Contatos</strong>
+            <p>contato@fkpizzaria.com</p>
+            <p>+55 11 9999-9999</p>         
+        </div>
+        <div id="social-media">
+            <strong>Redes Sociais</strong>
+            <div class="icons">
+                <img src="../assets/instagram-logo.svg" alt="Instagram">
+                <img src="../assets/facebook-logo.svg" alt="Facebook">
+            </div>
+            
+            
+        </div>
+    </footer>
+
+
+
+</body>
+</html>

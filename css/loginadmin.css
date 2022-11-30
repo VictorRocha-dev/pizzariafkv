@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&family=Lobster&family=Roboto:wght@300;400;500&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #2f3444;
+    /*/background: rgba(62, 107, 255, 0.74);/*/
+}
+.container{
+    width: 450px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.logar{
+    width: 100%;
+    background: #242731;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 50px 30px;
+    display: block;
+}
+.title{
+    width: 100%;
+    color: #E6EDF7;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    padding: 10px;
+
+}
+.button{
+    background: rgba(62, 107, 255, 0.082);
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.button button{
+    width: 50%;
+    flex: 1;
+    margin: 5px;
+    padding: 7px;
+    border: none;
+    background: #1D1F26;
+    color: #E6EDF7;
+    border-radius: 10px;
+    font-family: 'Cabin', sans-serif;
+    cursor: pointer;
+    font-size: 17px;
+}
+button .active{
+    border: 2px solid red;
+}
+.text{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;    
+    font-family: 'Cabin', sans-serif;
+    color: #E6EDF7;
+    align-items: center;
+}
+.text p:nth-child(1){
+    font-weight: 600;
+    font-size: 30px;
+}
+.text p:nth-child(2){
+    font-size: 18px;
+    color: #e6edf767;
+}
+.text input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid rgba(230, 237, 247, 0.192);
+    font-family: 'Cabin', sans-serif;
+    color: #E6EDF7;
+    font-size: 15px;
+    transition: linear .3s;
+}
+.text input:hover{
+    border: 2px solid #3E6BFF;
+}
+.text .g-recaptcha{
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+    background: rgba(62, 107, 255, 0.082);
+    color: #3E6BFF;
+    border: 2px solid rgba(62, 107, 255, 0.082);
+    font-size: 15px;
+}
+/* cadastro */
+.cadastrar{
+    width: 100%;
+    background: #242731;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 50px 30px;
+    display: none;
+}
+.cadastrar label{
+    color: #3E6BFF;
+    font-size: 15px;
+}
+.modal-header{
+    display: flex;
+    justify-content: flex-end;
+}
+.title-modal{
+    width: 500px;
+    margin-top: 10px;
+    font-family: 'Cabin', sans-serif;
+    background: #1D1F26;
+    border-radius: 10px 0 0 10px;
+    padding: 20px;
+}
+.title-modal p{
+    color: #e6edf7af;
+    font-size: 20px;
+}
+.title-modal b{
+    color: #E6EDF7;
+    font-size: 30px;
+}
+.title-modal a{
+    color: #3E6BFF;
+    text-decoration: none;
+}
+.title-modal img{
+    width: 20px;
+    cursor: pointer;
+}
+
